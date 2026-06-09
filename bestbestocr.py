@@ -114,7 +114,7 @@ def read_frames(frames_snapshot):
     })
 
     response = client.beta.chat.completions.parse(
-        model="gpt-5.4",
+        model="gpt-5.4-mini",
         max_completion_tokens=200,
         messages=[{"role": "user", "content": content}],
         response_format=FrameText
